@@ -50,7 +50,7 @@ var start = function() {
 		inquirer.prompt({
 			name: 'qty',
 			type: 'input',
-			message: 'Please ente the amount you would like to purchase'
+			message: 'Please enter amount you would like to purchase'
 		}).then(function(answer) {
 
 			//sale
@@ -68,7 +68,7 @@ var start = function() {
 			}
 
 			else {
-				console.log('Whoops looks like we only have ' + chosen.stock_quantity + '. Lets start over. \n');
+				console.log('Whoops looks like we only have ' + chosen.stock_quantity + '. Lets start o. \n');
 				start();
 			}
 		})
